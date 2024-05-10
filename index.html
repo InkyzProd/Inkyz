@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <title>Inkyz.xyz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta lang="en">
+  <meta property="og:title" content="Inkyz" />
+  <meta property="og:description" content="Inkyz official website" />
+  <meta property="og:site_name" content="Inkyz.xyz" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://media.discordapp.net/attachments/1198885435317960724/1237961958138052648/20240430_031201.png" />
+  <meta property="og:url" content="https://inkyz.xyz" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" />
+  <script src="scripts.js"></script>
+  <style>
+    @font-face {
+      font-family: 'keceh';
+      src: url('./fonts/RobustaShow-Rp73l.otf') format('opentype')
+    }
+
+    .home-container {
+      width: 100%;
+      display: flex;
+      overflow: auto;
+      min-height: 100vh;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #000000;
+    }
+
+    .home-hero {
+      width: 100%;
+      display: flex;
+      padding: 0;
+      min-height: 80vh;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .home-text {
+      color: #fff;
+      font-size: 50px;
+      max-width: 300px;
+      margin: 0;
+      text-align: center;
+      font-family: 'keceh';
+    }
+
+    .icon-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .button-crut {
+      padding: 0.6em 2em;
+      border: none;
+      outline: none;
+      color: rgb(255, 255, 255);
+      background: #fff;
+      cursor: pointer;
+      position: relative;
+      z-index: 0;
+      border-radius: 15px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .button-crut:active {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .button-crut:before {
+      content: "idk";
+      background: linear-gradient(500deg,
+          #66D1FF,
+          #66D1FF,
+          #000000,
+          #66D1FF,
+          #66D1FF,
+          #000000,
+          #66D1FF,
+          #000000,
+          #66D1FF);
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(3px);
+      -webkit-filter: blur(3px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing-button-crut 50s linear infinite;
+      transition: opacity 0.5s ease-in-out;
+      border-radius: 15px;
+    }
+
+    @keyframes glowing-button-crut {
+      0% {
+        background-position: 0 0;
+      }
+
+      50% {
+        background-position: 400% 0;
+      }
+
+      100% {
+        background-position: 0 0;
+      }
+    }
+
+    .button-crut:after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #222;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <div class="home-container" style="text-decoration: none;">
+    <div class="home-hero">
+      <h1 class="home-text">
+        <span>Hi, I'm <span style="color: #66D1FF; font-weight: bold;">Inkyz</span>!</span>
+      </h1>
+      
+      <button onclick="this.innerText = 'Please Wait...'; idk()" style="font-size: 15px;" class="button-crut home-text" role="button">My Project List</button>
+
+      <div class="icon-container">
+        <a href="https://github.com/InkyzProd" target="_blank" style="color: #66D1FF;text-decoration: none;">
+          <i class="bi bi-github" style="font-size:30px; margin-right: 10px;"></i>
+        </a>
+
+        <a href="mailto:contact@inkyz.xyz" style="color: #66D1FF;text-decoration: none;">
+          <i class="bi bi-envelope-at-fill" style="font-size:30px; margin-right: 10px;"></i>
+        </a>
+
+        <a href="https://dsc.gg/pixelnet-community" target="_blank" style="color: #66D1FF;text-decoration: none;">
+          <i class="bi bi-discord" style="font-size:30px; margin-right: 10px;"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
